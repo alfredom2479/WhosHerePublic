@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:hint="Student Name"
+        android:id="@+id/addStudentDialogNameET">
+    </EditText>
+    <Spinner
+        android:id="@+id/addStudentDialogStatusSpin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:entries="@array/statuses"/>
+    <ImageView
+        android:id="@+id/addStudentDialogFaceIV"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:maxHeight="150dp"
+        android:scaleType="centerInside"/>
+    <Button
+        android:id="@+id/addStudentDialogChoosePicButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="choose Picture"/>
+    <Button
+        android:id="@+id/addStudentSaveButt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Save"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+    </Button>
+</LinearLayout>

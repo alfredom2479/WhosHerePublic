@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "857079737163",
+    "firebase_url": "https://whoshere-cc2e9.firebaseio.com",
+    "project_id": "whoshere-cc2e9",
+    "storage_bucket": "whoshere-cc2e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857079737163:android:79afc80751c17106c816ce",
+        "android_client_info": {
+          "package_name": "com.example.whosherejava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857079737163-85jmbk9552ccl7e6updc33tgpaankrf0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whosherejava",
+            "certificate_hash": "61355a186e0442145ee6de19696ba79a353b2575"
+          }
+        },
+        {
+          "client_id": "857079737163-8te41pag179j1dor2feoaiapf3lc65uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyColvK1dNDNerR9ajZSTwCsUBu3BxZwEBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857079737163-8te41pag179j1dor2feoaiapf3lc65uc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

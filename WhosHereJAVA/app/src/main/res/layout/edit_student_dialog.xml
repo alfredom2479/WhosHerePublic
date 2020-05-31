@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:paddingVertical="15dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <TextView-->
+<!--        android:id="@+id/editDialogMainTV"-->
+<!--        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+<!--        android:Text="TextViewName"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <EditText
+        android:id="@+id/editDialogNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:layout_marginTop="4dp"/>
+    <Spinner
+        android:id="@+id/editDialogStatusSpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/statuses"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:id="@+id/editDialogSaveButt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="4dp"
+        />
+    <Button
+        android:id="@+id/editDialogMurderButt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Murder"
+        android:layout_marginTop="4dp"/>
+
+
+</LinearLayout>

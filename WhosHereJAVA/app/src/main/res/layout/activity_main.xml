@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:id="@+id/parentLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+        </androidx.appcompat.widget.Toolbar>
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/mainNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/menu_drawer">
+
+    </com.google.android.material.navigation.NavigationView>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/mainTopLL"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_below="@+id/mainAppBarLayout">-->
+<!--        <TextView-->
+<!--            android:id="@+id/mainUsernameTV"-->
+<!--            android:text="User"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:textSize="30sp">-->
+<!--        </TextView>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <Button-->
+<!--                android:id="@+id/mainAddClassPicButt"-->
+<!--                android:layout_width="136dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Add Picture Of class" />-->
+<!--            <Button-->
+<!--                android:id="@+id/mainAddStudentButt"-->
+<!--                android:layout_width="136dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Add Student" />-->
+<!--            <Button-->
+<!--                android:id="@+id/mainToMain2"-->
+<!--                android:layout_width="136dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Test activity" />-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/mainListHeadingLL"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_below="@+id/mainTopLL">-->
+<!--            <TextView-->
+<!--                android:id="@+id/mainStudentNameTV"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Student Name"-->
+<!--                android:textSize="20sp">-->
+<!--            </TextView>-->
+<!--            <TextView-->
+<!--                android:id="@+id/mainAttendanceTV"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Attendance"-->
+<!--                android:textSize="20sp">-->
+<!--            </TextView>-->
+<!--        </LinearLayout>-->
+<!--    <ListView-->
+<!--            android:id="@+id/mainLV"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_below="@id/mainListHeadingLL"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:orientation="vertical">-->
+<!--    </ListView>-->
+
+</androidx.drawerlayout.widget.DrawerLayout>

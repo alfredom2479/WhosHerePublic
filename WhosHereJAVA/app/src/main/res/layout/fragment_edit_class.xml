@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditClassFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class Name"
+            android:textSize="18dp"/>
+        <EditText
+            android:id="@+id/editClass_nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/editClass_changeColorButt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Color"/>
+        <Button
+            android:id="@+id/editClass_saveButt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"/>
+        <Button
+            android:id="@+id/editClass_deleteClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Class"/>
+    </LinearLayout>
+
+
+</FrameLayout>
